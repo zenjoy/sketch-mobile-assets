@@ -2,7 +2,7 @@
 
 _Based on [zmtalker/sketch-android-assets](https://github.com/zmalltalker/sketch-android-assets)_ 
 
-This plugin for Bohemian Coding's Sketch app will generate iOS and Android assets for slices on your current page. Assets are automatically created at mdpi/hdpi/xhdpi/xxhdpi/xxxhdpi for Android and @1x/@2x for iOS, then named and organized according to platform conventions. 
+This plugin for Bohemian Coding's Sketch app will generate iOS and Android assets for slices on your current page. Assets are automatically created at mdpi/hdpi/xhdpi/xxhdpi/xxxhdpi for Android and @1x/@2x/@3x for iOS, then named and organized according to platform conventions. 
 
 **NOTE:** This plugin is designed for **Sketch 3**. It will overwrite any previously generated assets without prompting.
 
