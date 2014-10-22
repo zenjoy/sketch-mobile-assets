@@ -131,7 +131,8 @@ function process_slice(slice, doc, base_dir, prefix, suffix, size){
 	
     var iOSFactors = [NSArray arrayWithObjects:
 	    [".png", 1/baseSize],
-	    ["@2x.png", 2/baseSize]];
+	    ["@2x.png", 2/baseSize],
+	    ["@3x.png", 3/baseSize]];
 
     for (var i = 0; i < [androidFactors count]; i++){
         var base = [androidFactors objectAtIndex:i];
