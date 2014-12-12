@@ -4,7 +4,7 @@ _Based on [zmtalker/sketch-android-assets](https://github.com/zmalltalker/sketch
 
 This plugin for Bohemian Coding's Sketch app will generate iOS and Android assets for slices on your current page. Assets are automatically created at mdpi/hdpi/xhdpi/xxhdpi/xxxhdpi for Android and @1x/@2x/@3x for iOS, then named and organized according to platform conventions. 
 
-**NOTE:** This plugin is designed for **Sketch 3**. It will overwrite any previously generated assets without prompting.
+**NOTE:** This plugin is designed for **Sketch 3.2**. It will overwrite any previously generated assets without prompting.
 
 ### Setup:
 * Copy the `Generate Mobile Assets.jstalk` file and `/library` folder into your Sketch plugins folder 
@@ -21,8 +21,8 @@ This plugin for Bohemian Coding's Sketch app will generate iOS and Android asset
 - - -
 &nbsp;  
 
-##### Last updated 10/22/14
- * Included support for @3x iOS assets.
+##### Last updated 12/12/14
+ * Now works with Sketch 3.2. 
 
 ##### Known issues:
- * Sketch bug: If you're trying to export an artboard and the object inside contains a border, the final exported size won't be correct. See [this issue](https://github.com/bomberstudios/sketch-framer/issues/31) for details. Easiest workaround is to manually create slices from your layer groups instead of generating slices from your artboards.
+ * None that I’m aware of; please [let me know](https://github.com/pixi-stix/sketch-mobile-assets/issues) if you find any!
