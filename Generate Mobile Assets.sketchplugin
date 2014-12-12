@@ -166,7 +166,7 @@ function copy_layer_with_factor(original_slice, factor){
     var copySlice = [original_slice duplicate];
     var frame = [copySlice frame];
 
-    var rect = [copySlice rectByAccountingForStyleSize:[[copySlice absoluteRect] rect]],
+    var rect = [copySlice absoluteDirtyRect],
     slice = [MSExportRequest requestWithRect:rect scale:factor];
     [copySlice removeFromParent];
     
