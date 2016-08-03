@@ -1,0 +1,24 @@
+{
+  "author" : "",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "name" : "sketch-mobile-assets",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.bohemiancoding.sketch.runscriptidentifier"
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "com.bohemiancoding.sketch.runscriptidentifier"
+    ],
+    "title" : "sketch-mobile-assets"
+  },
+  "identifier" : "com.example.sketch.b59a99de-92ea-41f4-a160-67e764d78788",
+  "version" : "0.1",
+  "description" : "",
+  "authorEmail" : "",
+  "name" : "sketch-mobile-assets"
+}
