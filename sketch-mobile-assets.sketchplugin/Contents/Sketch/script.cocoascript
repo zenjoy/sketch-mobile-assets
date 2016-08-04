@@ -15,7 +15,7 @@ var onRun = function(context) {
 
 
         // Do you want to include a suffix? [yes/no]
-        includeSuffix: "yes",
+        includeSuffix: "no",
 
         // The default suffix is set to the page name (examples: normal, pressed, focused, disabled, selected).
         // Un-comment the next line to set a custom one manually instead:
