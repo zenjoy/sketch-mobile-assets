@@ -134,6 +134,11 @@ function process_slice(slice, doc, base_dir, prefix, suffix, size){
 	    ["@2x.png", 2/baseSize],
 	    ["@3x.png", 3/baseSize]];
 
+		var WinRTFactors = [NSArray arrayWithObjects:
+			[".scale-100.png", 1/baseSize],
+			[".scale-140.png", 1.4/baseSize],
+			[".scale-240.png", 2.4/baseSize]];
+
     for (var i = 0; i < [androidFactors count]; i++){
         var base = [androidFactors objectAtIndex:i];
         var factor = [base objectAtIndex:1];
@@ -159,6 +164,19 @@ function process_slice(slice, doc, base_dir, prefix, suffix, size){
 	    [doc saveArtboardOrSlice:version toFile:file_name];
 	    log("Saved " + file_name);
     }
+
+		for (var i = 0; i < [WinRTFactors count]; i++) {
+			var base = [WinRTFactors objectAtIndex:i];
+			var factor = [base objectAtIndex:1];
+			var name = [base objectAtIndex:0];
+
+			log("Processing " + slice_name + name + "(" + factor + ")");
+			var slice_size = [slice_width * factor];
+			var version = copy_layer_with_factor(slice, factor);
+			var file_name = base_dir + "/WinRT/" + prefix + slice_name + suffix + slice_width + name;
+			[doc saveArtboardOrSlice:version toFile:file_name];
+			log("Saved " + file_name);
+		}
 }
 
 
